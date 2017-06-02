@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
     <meta name="keywords" content="广东海洋大学 共青团 共青团广东海洋大学委员会">
     <meta name="description" content="共青团广东海洋大学委员会">
     <meta name="author" content="广东海洋大学领沃团队">
@@ -23,15 +23,21 @@
   </head>
   <body>
    <header>
-       <div class="main">
-        <img src="img/logo.svg" id="index_banner" alt="海大共青团">
-        <h1>海大共青团</h1>
-        <h2>共青团广东海洋大学委员会</h2>
-        <img src="img/flower.svg" alt="五月花">
+       <div class="center-head">
+           <img src="img/banner.png" alt="">
+           <img src="img/logo.svg" id="index_banner" alt="海大共青团">
        </div>
    </header>
    <nav class="navbar navbar-default">
-      <div class="container">
+      <div class="container center-head">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html">首页<span class="sr-only">海大共青团首页</span></a></li>
@@ -60,7 +66,7 @@
              <hr>
            </div>
            <div class="row white">
-            <div class="col-sm-9">
+            <div class="col-xs-12 col-sm-9">
                 <h3 class="post-title">2014年校团委社会实践部新生见面会</h3>
                 <small class="post-meta">2014-10-15 0:32:26 by <a href="#">04011</a></small>
                 <hr>
@@ -84,63 +90,71 @@
 
             </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 sidebar">
-          <div class="sidebar-module">
-            <h4>关于文章</h4>
-            <p>社会实践部是校团委的负责学生社会实践的重要部门，以社会实践为平台，为学生创造良好的社会实践环境和条件，培养学生的创新精神和创业能力，提高学生的综合素质。它的主要职能为：负责为大学生社会实践教育工作提供平台，增加大学生实践经验，增强与社会接轨的能力，培养学生创新，创业能力。</p>
-          </div>
-          <div class="sidebar-module">
-            <h4>其它文章</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">2014年 5月</a></li>
-              <li><a href="#">2014年 2月</a></li>
-              <li><a href="#">2014年 1月</a></li>
-              <li><a href="#">2013年 12月</a></li>
-              <li><a href="#">2013年 11月</a></li>
-              <li><a href="#">2013年 10月</a></li>
-              <li><a href="#">2013年 9月</a></li>
-              <li><a href="#">2013年 8月</a></li>
-              <li><a href="#">2013年 7月</a></li>
-              <li><a href="#">2013年 6月</a></li>
-              <li><a href="#">2013年 5月</a></li>
-              <li><a href="#">2013年 4月</a></li>
-            </ol>
-          </div>
-          <div class="sidebar-module picbox">
-           <h4>活动展览</h4>
-           <section class="pic slider">
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=1" alt="...">
-             </a>
+        <div class="col-xs-12 col-sm-3 sidebar">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    关于文章
+                </div>
+                <div class="panel-body">
+                    <p>社会实践部是校团委的负责学生社会实践的重要部门，以社会实践为平台，为学生创造良好的社会实践环境和条件，培养学生的创新精神和创业能力，提高学生的综合素质。它的主要职能为：负责为大学生社会实践教育工作提供平台，增加大学生实践经验，增强与社会接轨的能力，培养学生创新，创业能力。</p>
+                </div>
+                <div class="panel-heading">
+                    其它文章
+                </div>
+                <div class="panel-body">
+                    <ol class="list-unstyled text-alignsidebar">
+                      <li><a href="#">2014年 5月</a></li>
+                      <li><a href="#">2014年 2月</a></li>
+                      <li><a href="#">2014年 1月</a></li>
+                      <li><a href="#">2013年 12月</a></li>
+                      <li><a href="#">2013年 11月</a></li>
+                      <li><a href="#">2013年 10月</a></li>
+                      <li><a href="#">2013年 9月</a></li>
+                      <li><a href="#">2013年 8月</a></li>
+                      <li><a href="#">2013年 7月</a></li>
+                      <li><a href="#">2013年 6月</a></li>
+                      <li><a href="#">2013年 5月</a></li>
+                      <li><a href="#">2013年 4月</a></li>
+                    </ol>
+                </div>
+                <div class="panel-heading">
+                    活动展览
+                </div>
+                <div class="panel-body">
+                   <section class="pic slider">
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick02.jpg" alt="...">
+                     </a>
+                    </div>
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick03.jpg" alt="...">
+                     </a>
+                    </div>
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick04.jpg" alt="...">
+                     </a>
+                    </div>
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick02.jpg" alt="...">
+                     </a>
+                    </div>
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick03.jpg" alt="...">
+                     </a>
+                    </div>
+                    <div>
+                      <a href="#" class="thumbnail">
+                        <img src="img/slick04.jpg" alt="...">
+                     </a>
+                    </div>
+                   </section>
+                </div>
             </div>
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=2" alt="...">
-             </a>
-            </div>
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=3" alt="...">
-             </a>
-            </div>
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=1" alt="...">
-             </a>
-            </div>
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=2" alt="...">
-             </a>
-            </div>
-            <div>
-              <a href="#" class="thumbnail">
-                <img src="http://placehold.it/350x300?text=3" alt="...">
-             </a>
-            </div>
-           </section>
-          </div>
         </div><!-- /.blog-sidebar -->
       </div><!-- /.row -->
 
@@ -150,28 +164,28 @@
    <footer>
      <div class="container main">
          <div class="row">
-             <div class="col-md-4">
+             <div class="col-xs-12 col-sm-4">
               <ul class="list-unstyled">
                <li>地址： 广东省湛江市湖光岩东</li>
                <li>邮编： 524088</li>
                <li>电话： 0759-2383187</li>
               </ul>
              </div>
-             <div class="col-md-4">
+             <div class="col-xs-12 col-sm-4">
               <ul class="list-unstyled">
                <li>传真： 2396065</li>
                <li>E-mail： gdou.tw@163.com</li>
                <li>技术支持： 海大领沃团队</li>
               </ul>
              </div>
-             <div class="col-md-4">
+             <div class="col-xs-12 col-sm-4">
               <ul class="list-unstyled">
                 <img src="img/qr.jpg" alt="二维码">
               </ul>
              </div>
          </div>
          <div class="row">
-             <div class="col-md-12">
+             <div class="col-xs-12 col-sm-12">
                 <ul class="list-inline">
                  <li>Copyright© 广东海洋大学团委</li>
                  <li>2017 All Rights Reserved</li>
