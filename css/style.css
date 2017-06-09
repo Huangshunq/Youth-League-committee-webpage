@@ -8,6 +8,12 @@ body{
     background-image: url(../img/bodybg.png);
     background-repeat: repeat-x;
     background-position: 0% -10%;
+    
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
 a{
     text-decoration: none!important;
