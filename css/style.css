@@ -1,59 +1,61 @@
 @charset "UTF-8";
 
 /* basic */
-body{
+
+body {
     text-align: center;
-    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
-    
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
     background-image: url(../img/bodybg.png);
     background-repeat: repeat-x;
     background-position: 0% -10%;
-    
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
 }
-a{
+a {
     text-decoration: none!important;
     color: dimgrey;
 }
-header,footer{
+header,
+footer {
     width: 100%;
     text-align: left;
 }
+
 /*页头*/
-header{
+
+header {
     background-color: white;
 }
-.center-head{
+.center-head {
     max-width: 900px;
     margin: 0 auto;
     position: relative;
 }
-header img[src="img/banner.png"]{
+header img[src="img/banner.png"] {
     width: 100%;
 }
-header img[src="img/logo.svg"]{
+header img[src="img/logo.svg"] {
     position: absolute;
     left: 70px;
     top: 20px;
     width: 110px;
 }
-img[src="img/home.svg"]{
+img[src="img/home.svg"] {
     width: 30%;
     vertical-align: sub;
 }
-h1{
+h1 {
     position: absolute;
     display: inline-block;
     vertical-align: super;
     color: #FFF100;
-    font-family: "STXingkai","KaiTi";
+    font-family: "STXingkai", "KaiTi";
     z-index: 999;
 }
-h2{
+h2 {
     position: absolute;
     bottom: 10px;
     left: 200px;
@@ -61,285 +63,309 @@ h2{
     display: inline-block;
     color: #FFF100;
     font-family: "黑体";
-    
     opacity: 0.8;
-    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
+
 /*导航栏*/
-.navbar-default{
-    background-image: -webkit-linear-gradient(top,#F66B46 0,#CD120C 100%);
-    background-image: -o-linear-gradient(top,#F66B46 0,#CD120C 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#F66B46),to(#CD120C));
-    background-image: linear-gradient(to bottom,#F66B46 0,#CD120C 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffF66B46', endColorstr='#ffCD120C', GradientType=0);
+
+.navbar-default {
+    background-image: -webkit-linear-gradient(top, #F66B46 0, #CD120C 100%);
+    background-image: -o-linear-gradient(top, #F66B46 0, #CD120C 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F66B46), to(#CD120C));
+    background-image: linear-gradient(to bottom, #F66B46 0, #CD120C 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffF66B46', endColorstr='#ffCD120C', GradientType=0);
     border-radius: 0px;
     border: 0px solid red;
     margin: 0;
     min-height: 20px;
 }
-.navbar-toggle,.navbar-toggle.collapsed{
+.navbar-toggle,
+.navbar-toggle.collapsed {
     background-color: white;
 }
-.collapse.navbar-collapse ul{
+.collapse.navbar-collapse ul {
     margin-left: 35px;
 }
-.navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-nav > li > a {
     color: azure!important;
     padding: 10px 10px;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a{
-    background-image: -webkit-linear-gradient(top,#E84C32 0,#E84C32 100%);
-    background-image: -o-linear-gradient(top,#E84C32 0,#E84C32 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#E84C32),to(#E84C32));
-    background-image: linear-gradient(to bottom,#E84C32 0,#E84C32 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffE84C32', endColorstr='#ffE84C32', GradientType=0);
-    box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a {
+    background-image: -webkit-linear-gradient(top, #E84C32 0, #E84C32 100%);
+    background-image: -o-linear-gradient(top, #E84C32 0, #E84C32 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E84C32), to(#E84C32));
+    background-image: linear-gradient(to bottom, #E84C32 0, #E84C32 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffE84C32', endColorstr='#ffE84C32', GradientType=0);
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, .075);
     background-image: none!important;
     background-color: #E84C32!important;
 }
 
 /*主页*/
-.main{
+
+.main {
     position: relative;
     margin: 0 auto;
 }
+
 /*轮播图*/
-#carousel-example-generic{
+
+#carousel-example-generic {
     margin-top: 20px;
 }
-#carousel-example-generic img{
+#carousel-example-generic img {
     width: 100%;
     max-height: 400px;
 }
-.row-marginBottom{
+.row-marginBottom {
     margin-bottom: 20px;
 }
-.carousel-indicators{
+.carousel-indicators {
     bottom: 10px;
 }
+
 /*面板*/
-.well{
+
+.well {
     background-image: none;
     background-color: transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false,startColorstr='#ffFFFFFF', endColorstr='#ffFFFFFF', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false, startColorstr='#ffFFFFFF', endColorstr='#ffFFFFFF', GradientType=0);
     padding: 15px 30px 0px;
     border-color: aliceblue;
 }
-.panel{
+.panel {
     text-align: left;
 }
-.panel-default > .panel-heading{
-    background-image: -webkit-linear-gradient(top,#F66B46 0,#CD120C 100%);
-    background-image: -o-linear-gradient(top,#F66B46 0,#CD120C 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#F66B46),to(#CD120C));
-    background-image: linear-gradient(to bottom,#F66B46 0,#CD120C 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffF66B46', endColorstr='#ffCD120C', GradientType=0);
+.panel-default > .panel-heading {
+    background-image: -webkit-linear-gradient(top, #F66B46 0, #CD120C 100%);
+    background-image: -o-linear-gradient(top, #F66B46 0, #CD120C 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F66B46), to(#CD120C));
+    background-image: linear-gradient(to bottom, #F66B46 0, #CD120C 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffF66B46', endColorstr='#ffCD120C', GradientType=0);
     background-repeat: repeat-x;
     color: azure;
     padding: 5px 10px 5px 15px;
     margin: 5px 8px 0;
 }
-.panel-body{
+.panel-body {
     padding: 5px 15px 0px;
 }
-.label.label-warning{
+.label.label-warning {
     background-color: transparent;
     float: right;
     margin-top: 2px;
 }
-.label.label-warning a{
-    color:azure;
+.label.label-warning a {
+    color: azure;
 }
-.panel h5 a{
+.panel h5 a {
     display: inline-block;
     width: 79%;
     overflow: hidden;
-    white-space:nowrap;
-    -o-text-overflow:ellipsis;
-    text-overflow:ellipsis;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
-a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover,a:focus,a:hover{
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover,
+a:focus,
+a:hover {
     border-color: #B71C1C;
 }
-a:focus, a:hover,.panel small:hover{
+a:focus,
+a:hover,
+.panel small:hover {
     color: #EE0008;
 }
-.panel.panel-default.notice h5 a{
+.panel.panel-default.notice h5 a {
     width: 100%;
 }
-.panel small{
+.panel small {
     position: absolute;
     right: 30px;
     margin: 3px 0 0 1px;
 }
 
 /*滚动栏*/
-.pic div{
+
+.pic div {
     margin: 0 5px;
 }
-.slick-slide img{
+.slick-slide img {
     min-height: 100px;
 }
+
 /*友情链接*/
-.thumbnail img{
+
+.thumbnail img {
     width: 136.35px;
 }
+
 /*页尾*/
-footer{
+
+footer {
     background-color: #BC2929;
 }
-footer ul{
+footer ul {
     padding-top: 10px;
     color: azure;
 }
-footer ul.list-unstyled li{
+footer ul.list-unstyled li {
     padding-left: 70px;
     color: azure;
 }
-footer img{
+footer img {
     display: block;
     margin: 0 auto;
     width: 60px;
 }
-.list-inline{
+.list-inline {
     text-align: center;
 }
+
 /* 子页 */
-.text-alignsidebar{
+
+.text-alignsidebar {
     text-align: center;
 }
-.text-alignsidebar a,.text-alignsidebar a{
+.text-alignsidebar a,
+.text-alignsidebar a {
     display: inline-block;
     width: auto;
     border-bottom: 0.5px solid #fff;
 }
-.text-alignsidebar a:hover,.text-alignsidebar a:focus{
+.text-alignsidebar a:hover,
+.text-alignsidebar a:focus {
     display: inline-block;
     width: auto;
     border-bottom: 0.5px solid #EE0008;
 }
-.wideslider h5 a{
+.wideslider h5 a {
     width: 100%;
 }
+
 /* 文章页 */
-.jumbotron{
+
+.jumbotron {
     background-color: #f5f5f5;
     background-color: rgba(245, 245, 245, 0.7);
-    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
     padding-top: 20px;
     margin: 20px;
 }
-.jumbotron ol.breadcrumb{
+.jumbotron ol.breadcrumb {
     background-color: rgba(255, 255, 255, 0);
-    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     text-align: left;
 }
-.breadcrumb > li + li::before{
+.breadcrumb > li + li::before {
     color: black;
 }
-.jumbotron .white{
+.jumbotron .white {
     background-color: white;
 }
-.jumbotron p{
+.jumbotron p {
     font-size: 14px;
     text-indent: 28px;
     text-align: left;
 }
-.jumbotron .lead{
+.jumbotron .lead {
     font-size: 15px;
     text-indent: 32px;
 }
-.jumbotron img{
+.jumbotron img {
     width: 100%;
     margin-bottom: 4px;
 }
-.sidebar{
+.sidebar {
     margin-top: 70px;
     padding: 18px;
 }
-.sidebar-module{
+.sidebar-module {
     padding-bottom: 40px;
 }
-.sidebar-module .list-unstyled{
+.sidebar-module .list-unstyled {
     text-align: center;
 }
-.previous{
+.previous {
     float: left;
 }
-.next{
+.next {
     float: right;
 }
-
-@media only screen and (max-width:699px){
-    header img[src="img/logo.svg"]{
+@media only screen and (max-width:699px) {
+    header img[src="img/logo.svg"] {
         position: absolute;
         left: 10%;
         top: 14%;
         width: 12%;
     }
-    img[src="img/home.svg"]{
+    img[src="img/home.svg"] {
         display: none;
     }
-    #bs-example-navbar-collapse-1{
+    #bs-example-navbar-collapse-1 {
         padding: 0;
     }
-    ul.nav.navbar-nav{
+    ul.nav.navbar-nav {
         margin: 0;
     }
 }
-@media only screen and (min-width:700px) and (max-width:767px){
-    header .center-head{
+@media only screen and (min-width:700px) and (max-width:767px) {
+    header .center-head {
         max-width: 700px;
         margin: 0 auto;
         position: relative;
     }
-    header img[src="img/logo.svg"]{
+    header img[src="img/logo.svg"] {
         position: absolute;
         left: 70px;
         top: 30px;
         width: 70px;
     }
-    img[src="img/home.svg"]{
+    img[src="img/home.svg"] {
         width: auto;
         max-width: 20px!important;
     }
-    #bs-example-navbar-collapse-1{
+    #bs-example-navbar-collapse-1 {
         padding: 0;
     }
-    .collapse.navbar-collapse ul{
+    .collapse.navbar-collapse ul {
         margin: 7.5px 0;
     }
-    .navbar-default .navbar-nav > li > a{
+    .navbar-default .navbar-nav > li > a {
         padding: 10px 5px;
     }
-    .navbar-toggle.collapsed{
+    .navbar-toggle.collapsed {
         background-color: aliceblue;
     }
 }
-@media only screen and (min-width:768px) and (max-width:992px){
-    header .center-head{
+@media only screen and (min-width:768px) and (max-width:992px) {
+    header .center-head {
         max-width: 700px;
         margin: 0 auto;
         position: relative;
     }
-    header img[src="img/logo.svg"]{
+    header img[src="img/logo.svg"] {
         position: absolute;
         left: 70px;
         top: 30px;
         width: 70px;
     }
-    img[src="img/home.svg"]{
+    img[src="img/home.svg"] {
         width: auto;
         max-width: 20px!important;
     }
-    .collapse.navbar-collapse ul{
+    .collapse.navbar-collapse ul {
         margin-left: 10px;
     }
-    .navbar-default .navbar-nav > li > a{
+    .navbar-default .navbar-nav > li > a {
         padding: 10px 5px;
     }
-    .navbar-toggle.collapsed{
+    .navbar-toggle.collapsed {
         background-color: aliceblue;
     }
 }
